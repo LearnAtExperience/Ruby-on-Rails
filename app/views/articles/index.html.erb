@@ -10,9 +10,9 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-light">
     <div class="container">
-      <a href="/" class="navbar-brand">Travel <span>EXP</span></a>
+      <a href="/" class="navbar-brand">MakeMyTrip</a>
 
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#myNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -35,27 +35,13 @@
     </div>
   </nav>
 
-  <section class="w-100 hero">
-    <div class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <%# Item 1 %>
-        <div class="carousel-item active">
-          <img
-            src="https://thumbs.dreamstime.com/b/lucerne-city-aerial-panoramic-view-switzerland-lucerne-city-aerial-panoramic-view-lucerne-luzern-city-central-166233417.jpg"
-            alt="Image" class="d-block w-100 carousel-img">
-        </div>
-        <%# Item 2 %>
-        <div class="carousel-item">
-          <img
-            src="https://cdn.britannica.com/89/179589-138-3EE27C94/Overview-Great-Wall-of-China.jpg?w=800&h=450&c=crop"
-            alt="Image" class="d-block w-100 carousel-img">
-        </div>
-        <%# Item 3 %>
-        <div class="carousel-item">
-          <img
-            src="https://cdn.theatlantic.com/thumbor/47zvirkGdVhgHefPrzCT4esAyBQ=/900x568/media/img/photo/2012/05/scenes-from-brazil/b01_05118020/original.jpg"
-            alt="Image" class="d-block w-100 carousel-img">
-        </div>
+  <section class="w-100 hero d-flex justify-content-center align-items-center">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h3 class="text-white text-center my-1">Make your wonderful trip with us...</h3>
+      <div class="d-lg-flex justify-content-lg-center align-items-lg-center">
+        <input type="text" class="hero-input my-1" placeholder="Search your favourite place here">
+        <button class="hero-btn text-white my-1">Search</button>
       </div>
     </div>
   </section>
