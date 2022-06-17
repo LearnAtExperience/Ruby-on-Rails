@@ -18,10 +18,10 @@
 
   <div>
     <%= form.label :phone, style: "display: block" %>
-    <%= form.number_field :phone %>
+    <%= form.number_field :phone, class: "form-control" %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit("Create User", class: "submit-btn") %>
   </div>
 <% end %>
