@@ -15,11 +15,50 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a href="/" class="navbar-brand">MakeMyTrip</a>
+
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav ms-lg-auto align-items-lg-center">
+          <% if user_signed_in? %>
+          <li class="nav-item">
+            Logged in as <strong><%= current_user.email %></strong>
+          </li>
+          <li class="nav-item">
+            <a href="/users/edit" class="nav-link">Edit Profile</a>
+          </li>
+          <li class="nav-item">
+            <a href="/users/sign_out" class="nav-link">Logout</a>
+          </li>
+          <% else %>
+          <li class="nav-item">
+            <a href="/users/sign_in" class="nav-link">Login</a>
+          </li>
+          <li class="nav-item">
+            <a href="/users/sign_up" class="nav-link">Sign Up</a>
+          </li>
+          <% end %>
+          <li class="nav-item">
+            <a href="/pages" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact" class="nav-link" id="contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <% if notice %>
-    <p class="alert alert-success"><%= notice %></p>
+  <p class="alert alert-success"><%= notice %></p>
   <% end %>
   <% if alert %>
-    <p class="alert alert-danger"><%= alert %></p>
+  <p class="alert alert-danger"><%= alert %></p>
   <% end %>
 
   <%= yield %>

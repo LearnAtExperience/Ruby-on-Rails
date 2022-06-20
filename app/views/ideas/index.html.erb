@@ -1,27 +1,3 @@
-<nav class="navbar navbar-expand-md navbar-light">
-  <div class="container">
-    <a href="/" class="navbar-brand">MakeMyTrip</a>
-
-    <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#myNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="navbar-nav ms-md-auto align-items-md-center">
-        <li class="nav-item">
-          <a href="/pages" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="/signin" class="nav-link">Sign In</a>
-        </li>
-        <li class="nav-item">
-          <a href="/" class="nav-link" id="home">Home</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
 <p style="color: green"><%= notice %></p>
 
 <h1>Users</h1>
@@ -30,7 +6,7 @@
   <% @ideas.each do |idea| %>
   <%= render idea %>
   <p>
-    <%= link_to "Show this idea", idea %>
+    <%= link_to "Show this User", idea %>
   </p>
   <% end %>
 </div>
