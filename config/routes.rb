@@ -13,7 +13,4 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root "articles#index"
-  get "/contact", to: "articles#contact"
-  get "/signin", to: "ideas#index"
-  get "/pages", to: "pages#info"
 end
