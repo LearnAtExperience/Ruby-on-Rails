@@ -38,7 +38,8 @@ body {
   font-size: 15px;
 }
 
-#sign-up {
+#sign-up,
+#sign-out {
   background-color: var(--blue);
   color: white;
   padding: 0.2rem 0.5rem;
@@ -92,6 +93,7 @@ body {
   outline: none;
   border-radius: 0.3rem;
   padding: 0 1rem;
+  color: white;
 }
 
 .about {
@@ -157,6 +159,17 @@ body {
   text-decoration: none;
   color: white;
 }
+
+.sign-up {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sign-up .form-input {
+  font-size: 14px;
+}
+
+
 
 
 
