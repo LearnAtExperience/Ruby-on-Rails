@@ -25,6 +25,9 @@
 
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="navbar-nav ms-lg-auto align-items-lg-center">
+          <li class="nav-item">
+            <a href="/ideas" class="nav-link">Users</a>
+          </li>
           <% if user_signed_in? %>
           <li class="nav-item">
             Logged in as <strong><%= current_user.email %></strong>
